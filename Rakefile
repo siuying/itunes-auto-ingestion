@@ -3,7 +3,7 @@ require 'rake'
 require 'jeweler'
 
 Jeweler::Tasks.new do |s|
-  s.name = "itunes-autoingestion"
+  s.name = "itunes_ingestion"
   s.description = "A simple port of Apple itunes Autoingestion tool to ruby."
   s.summary = "A simple port of Apple itunes Autoingestion tool to ruby."
   s.authors = ["Francis Chong"]

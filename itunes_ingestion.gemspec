@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{itunes-autoingestion}
+  s.name = %q{itunes_ingestion}
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/auto_ingestion.rb"
+    "lib/itunes_ingestion.rb"
   ]
   s.homepage = %q{http://github.com/siuying/itunes-auto-ingestion}
   s.require_paths = ["lib"]
