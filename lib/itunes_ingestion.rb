@@ -52,7 +52,7 @@ class AutoIngestion
       report = Zlib::GzipReader.new(StringIO.new(@response.body)).read
       parse_report(report)
     else
-      nil
+      raise "no data returned from itunes!"
     end
   end
 
