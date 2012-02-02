@@ -5,28 +5,32 @@
 
 Gem::Specification.new do |s|
   s.name = "itunes_ingestion"
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Francis Chong"]
   s.date = "2012-02-02"
   s.description = "A simple port of Apple itunes Autoingestion tool to ruby."
   s.email = "francis@ignition.hk"
-  s.extra_rdoc_files = [
-    "README.rdoc"
-  ]
   s.files = [
     "Gemfile",
     "Gemfile.lock",
-    "README.rdoc",
+    "LICENSE",
+    "README.md",
     "Rakefile",
     "VERSION",
-    "lib/itunes_ingestion.rb"
+    "lib/itunes_ingestion.rb",
+    "lib/itunes_ingestion/fetcher.rb",
+    "lib/itunes_ingestion/sales_report_parser.rb",
+    "spec/fetcher_spec.rb",
+    "spec/fixtures/report.txt",
+    "spec/sales_report_parser_spec.rb"
   ]
   s.homepage = "http://github.com/siuying/itunes-auto-ingestion"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
   s.summary = "A simple port of Apple itunes Autoingestion tool to ruby."
+  s.test_files = ["spec/fetcher_spec.rb", "spec/fixtures", "spec/fixtures/report.txt", "spec/sales_report_parser_spec.rb"]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
