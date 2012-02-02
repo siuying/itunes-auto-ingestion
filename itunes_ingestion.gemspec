@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{itunes_ingestion}
-  s.version = "0.1.1"
+  s.name = "itunes_ingestion"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Francis Chong}]
-  s.date = %q{2011-08-26}
-  s.description = %q{A simple port of Apple itunes Autoingestion tool to ruby.}
-  s.email = %q{francis@ignition.hk}
+  s.authors = ["Francis Chong"]
+  s.date = "2012-02-02"
+  s.description = "A simple port of Apple itunes Autoingestion tool to ruby."
+  s.email = "francis@ignition.hk"
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
@@ -23,10 +23,10 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/itunes_ingestion.rb"
   ]
-  s.homepage = %q{http://github.com/siuying/itunes-auto-ingestion}
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{A simple port of Apple itunes Autoingestion tool to ruby.}
+  s.homepage = "http://github.com/siuying/itunes-auto-ingestion"
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.10"
+  s.summary = "A simple port of Apple itunes Autoingestion tool to ruby."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
