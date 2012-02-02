@@ -1,0 +1,3 @@
+Provider	Provider Country	SKU	Developer	Title	Version	Product Type Identifier	Units	Developer Proceeds	Begin Date	End Date	Customer Currency	Country Code	Currency of Proceeds	Apple Identifier	Customer Price	Promo Code	Parent Identifier	Subscription	Period
+APPLE	US	UT124500	Your Company	App1	1.0.0	10	970	0	02/01/2011	02/01/2011	USD	TW	USD	10001000	0	 	 	 	 
+APPLE	US	UA124502	Your Company	App2	1.2.0	700	7100	0	02/01/2011	02/01/2011	JPY	JP	JPY	10001001	0	 	 	 	 
