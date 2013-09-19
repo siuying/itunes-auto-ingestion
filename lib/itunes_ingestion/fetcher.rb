@@ -17,10 +17,12 @@ module ITunesIngestion
     # username - username
     # password - password
     # vadnumber - vadnumber
-    def initialize(username, password, vadnumber)
+    # proxy - proxy url if applicable
+    def initialize(username, password, vadnumber, proxy=nil)
       @username = username
       @password = password
       @vadnumber = vadnumber
+      @proxy = proxy
     end
 
     # Fetch and unzip report from itunes connect
@@ -41,6 +43,7 @@ module ITunesIngestion
       params[:REPORTTYPE] = options[:report_type] || REPORT_SUMMARY
       params[:REPORTDATE] = options[:report_date] || (Time.now-60*60*24).strftime("%Y%m%d")
 
+      RestClient.proxy = @proxy
       response = RestClient.post BASE_URL, params
       if response.headers[:"errormsg"]
         raise ITunesConnectError.new response.headers[:"errormsg"]
