@@ -1,7 +1,7 @@
 require File.expand_path("../../lib/itunes_ingestion", __FILE__)
 
 describe ITunesIngestion::SalesReportParser do
-  let (:data) { open(File.expand_path("../report/report.txt", __FILE__)).read }
+  let (:data) { open(File.expand_path("../fixtures/report.txt", __FILE__)).read }
   
   it "parse report" do
     report = ITunesIngestion::SalesReportParser.parse(data)
