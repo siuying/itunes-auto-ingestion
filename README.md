@@ -12,7 +12,7 @@ To fetch report, use following code:
 
     require "itunes_ingestion"
 
-    fetcher = ITunesIngestion::Fetcher.new("username", "password", "vadnumber")
+    fetcher = ITunesIngestion::Fetcher.new("username", "password", "vendor_number")
     report_data = fetcher.fetch("20120202")
 
 To parse fetched report, use following code:
